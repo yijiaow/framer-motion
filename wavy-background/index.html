@@ -27,7 +27,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        min-height: 450px;
+        min-height: 360px;
         padding: 100px 20vw;
       }
 
@@ -100,6 +100,28 @@
       .custom-shape-divider-bottom-wave .shape-fill {
         fill: #202731;
       }
+
+      /* Layered waves via https://haikei.app */
+
+      .spacer {
+        aspect-ratio: 960/300;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .layer1 {
+        background-image: url('./layered-waves-haikei.svg');
+      }
+
+      .layer2 {
+        background-image: url('./layered-waves-haikei.svg');
+      }
+
+      .flip {
+        transform: rotate(180deg);
+      }
     </style>
   </head>
   <body>
@@ -153,6 +175,8 @@
         aspernatur natus, facilis eius accusamus veniam!
       </p>
     </section>
+
+    <div class="spacer layer1"></div>
     <section class="red">
       <h1>Nice Curves</h1>
       <p>
@@ -162,7 +186,9 @@
         assumenda! Laboriosam!
       </p>
     </section>
-    <section class="blue">
+    <div class="spacer layer2 flip"></div>
+
+    <section>
       <h1>Nice Curves</h1>
       <p>
         Doloremque culpa omnis obcaecati hic quisquam. Omnis, nostrum quae
