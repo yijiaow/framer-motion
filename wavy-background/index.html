@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Gemunu Libre', sans-serif;
+        font-size: 18px;
+        line-height: 150%;
+        background-color: #202731;
+        color: white;
+        overflow-x: hidden;
+      }
+
+      section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 450px;
+        padding: 100px 20vw;
+      }
+
+      .red {
+        background-color: #dc2626;
+      }
+
+      .blue {
+        background-color: #1e40af;
+      }
+
+      .indigo {
+        background-color: #3730a3;
+      }
+
+      .green {
+        background-color: #065f46;
+      }
+
+      /* Curved background with plain CSS */
+
+      .curve {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 225px;
+      }
+
+      .curve::before {
+        content: '';
+        position: absolute;
+        width: 55%;
+        height: 100%;
+        border-radius: 100% 50%;
+        background-color: #3730a3;
+        transform: translate(85%, 60%);
+        z-index: 1;
+      }
+
+      .curve::after {
+        content: '';
+        position: absolute;
+        width: 55%;
+        height: 100%;
+        border-radius: 100% 50%;
+        background-color: #dc2626;
+        transform: translate(-4%, 40%);
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="red">
+      <h1>Nice Curves</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In asperiores
+        dolore, doloribus aspernatur adipisci architecto sunt qui minima
+        dolorum. Delectus unde quaerat maiores ratione quos numquam sint eius
+        quis facilis.
+      </p>
+      <div class="curve"></div>
+    </section>
+    <section class="indigo">
+      <h1>Nice Curves</h1>
+      <p>
+        Neque nobis labore sunt suscipit. Explicabo sequi quaerat, enim
+        repudiandae quo ex omnis quisquam. Maiores incidunt velit iure fuga
+        assumenda pariatur distinctio, non dolorum et nobis ab iusto aspernatur
+        libero!
+      </p>
+    </section>
+    <section>
+      <h1>Nice Curves</h1>
+      <p>
+        Aperiam et ex nostrum sunt odit vero, natus ad in quidem mollitia, at
+        velit id! Ullam quia quo, velit quam vitae doloremque, dolorum et
+        aspernatur natus, facilis eius accusamus veniam!
+      </p>
+    </section>
+    <section class="red">
+      <h1>Nice Curves</h1>
+      <p>
+        Iure quaerat asperiores commodi sit, magni dignissimos recusandae
+        adipisci excepturi unde quo sunt optio dolorem soluta aspernatur placeat
+        sequi possimus delectus dolorum impedit ad consequuntur facilis ea est
+        assumenda! Laboriosam!
+      </p>
+    </section>
+    <section class="blue">
+      <h1>Nice Curves</h1>
+      <p>
+        Doloremque culpa omnis obcaecati hic quisquam. Omnis, nostrum quae
+        temporibus itaque expedita pariatur quis cumque illum eligendi inventore
+        sed est voluptates explicabo asperiores quas alias sunt ratione esse
+        sint quasi.
+      </p>
+    </section>
+    <section class="indigo">
+      <h1>Nice Curves</h1>
+      <p>
+        Natus optio at facilis quos! Officia eum et ratione iste consectetur, id
+        dicta, pariatur sint praesentium magnam ex porro aliquid minima atque
+        fuga fugiat, laudantium inventore quis molestiae possimus sed.
+      </p>
+    </section>
+    <section class="green">
+      <h1>Nice Curves</h1>
+      <p>
+        Iste tempora, sed atque exercitationem reiciendis delectus doloremque
+        omnis corporis natus facere culpa veritatis soluta minus officia unde
+        deleniti, illo sapiente, harum possimus! Laboriosam culpa praesentium
+        repellendus error doloremque iste!
+      </p>
+    </section>
+    <section>
+      <h1>Nice Curves</h1>
+      <p>
+        Vitae numquam quibusdam quasi quisquam voluptas? Dolorem nostrum iusto
+        architecto. Sapiente repellat libero, dolor veniam eum praesentium?
+        Soluta praesentium qui molestiae consectetur ipsam! Consectetur neque
+        corrupti, autem eligendi tenetur magnam?
+      </p>
+    </section>
+  </body>
+</html>
