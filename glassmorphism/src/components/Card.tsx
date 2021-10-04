@@ -18,17 +18,17 @@ const Card: React.FC<CardProps> = ({}) => {
         </div>
       </div>
       <ul className="socials">
-        <li>
+        <li style={{ '--i': 1 } as React.CSSProperties}>
           <a href="#">
             <FaLinkedinIn aria-hidden="true" />
           </a>
         </li>
-        <li>
+        <li style={{ '--i': 2 } as React.CSSProperties}>
           <a href="#">
             <FaTwitter aria-hidden="true" />
           </a>
         </li>
-        <li>
+        <li style={{ '--i': 3 } as React.CSSProperties}>
           <a href="#">
             <FaInstagram aria-hidden="true" />
           </a>
