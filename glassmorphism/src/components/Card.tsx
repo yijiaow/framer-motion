@@ -1,15 +1,16 @@
 import { FaLinkedinIn, FaTwitter, FaInstagram } from 'react-icons/fa';
+import styles from './Card.module.css';
 
 interface CardProps {}
 
 const Card: React.FC<CardProps> = ({}) => {
   return (
-    <div className="card">
-      <div className="content">
-        <div className="imgBx">
+    <div className={styles.card}>
+      <div className={styles.content}>
+        <div className={styles.imgBx}>
           <img src="/assets/user1.jpg" />
         </div>
-        <div className="contentBx">
+        <div className={styles.contentBx}>
           <h3>
             Ted Morales
             <br />
@@ -17,7 +18,7 @@ const Card: React.FC<CardProps> = ({}) => {
           </h3>
         </div>
       </div>
-      <ul className="socials">
+      <ul className={styles.socials}>
         <li style={{ '--i': 1 } as React.CSSProperties}>
           <a href="#">
             <FaLinkedinIn aria-hidden="true" />

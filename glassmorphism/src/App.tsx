@@ -1,20 +1,11 @@
-import { useState } from 'react';
-import Card from './components/Card';
+import LandingPage from './pages/landing';
+import PersonnelPage from './pages/personnel';
 
 interface AppProps {}
 
 const App: React.FC<AppProps> = ({}) => {
-  return (
-    <main>
-      <section>
-        <div className="container">
-          <Card />
-          <Card />
-          <Card />
-        </div>
-      </section>
-    </main>
-  );
+  // return <PersonnelPage />
+  return <LandingPage />;
 };
 
 export default App;
