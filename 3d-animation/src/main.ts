@@ -1,8 +1,25 @@
-import './style.css'
+import './style.css';
+import * as THREE from 'three';
+import * as dat from 'dat.gui';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
-const app = document.querySelector<HTMLDivElement>('#app')!
+// Debug
+const gui = new dat.GUI();
 
-app.innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`
+// Canvas
+const canvas = document.querySelector('canvas.webgl');
+
+// Scene
+const scene = new THREE.Scene();
+
+// Objects
+const geometry = new THREE.TorusKnotGeometry(10, 3, 100, 16);
+
+// Meterials
+const material = new THREE.MeshBasicMaterial({ color: 0xffff00 });
+
+// Mesh
+const torusKnot = new THREE.Mesh(geometry, material);
+scene.add(torusKnot);
+
+// Camera

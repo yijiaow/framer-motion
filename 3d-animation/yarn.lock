@@ -2,6 +2,16 @@
 # yarn lockfile v1
 
 
+"@types/dat.gui@^0.7.7":
+  version "0.7.7"
+  resolved "https://registry.yarnpkg.com/@types/dat.gui/-/dat.gui-0.7.7.tgz#2125aedfaa190364c5a50b0447858a7e159aea2e"
+  integrity sha512-CxLCme0He5Jk3uQwfO/fGZMyNhb/ypANzqX0yU9lviBQMlen5SOvQTBQ/Cd9x5mFlUAK5Tk8RgvTyLj1nYkz+w==
+
+"@types/three@^0.133.1":
+  version "0.133.1"
+  resolved "https://registry.yarnpkg.com/@types/three/-/three-0.133.1.tgz#6007faaf7f6b53339150a2a1fe57121e4c6607c1"
+  integrity sha512-XqBrP/+kbs+o0CYRhCVVE95v7FaL2bO5Z7+3VQJE0nEyjo+9LoLfeNgZITOnndKHxM+7ltEciAIR7uE0SZlsOg==
+
 esbuild-android-arm64@0.13.6:
   version "0.13.6"
   resolved "https://registry.yarnpkg.com/esbuild-android-arm64/-/esbuild-android-arm64-0.13.6.tgz#a109b4e5203e9ec144cadccdf18a5daf021423e5"
