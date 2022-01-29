@@ -1,0 +1,79 @@
+.form-container {
+  position: relative;
+  width: 400px;
+  min-height: 400px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form h2 {
+  position: relative;
+  margin-bottom: 36px;
+  color: var(--light);
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.form h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 80px;
+  height: 4px;
+  background-color: var(--light);
+}
+
+.fieldBox {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.fieldBox input {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  outline: none;
+  border: none;
+  border-radius: 45px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--light);
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.fieldBox input::placeholder {
+  color: inherit;
+}
+
+.fieldBox input[type='submit'] {
+  max-width: 100px;
+  margin-bottom: 20px;
+  background-color: var(--light);
+  color: var(--blue);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.forget-password {
+  color: var(--light);
+  opacity: 0.6;
+}
+
+.forget-password a {
+  margin-left: 5px;
+  color: var(--light);
+  font-weight: bold;
+}

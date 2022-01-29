@@ -1,0 +1,125 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('../assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 4rem;
+}
+
+.container {
+  position: relative;
+  width: calc(100% - 100px);
+  min-height: calc(100vh - 280px);
+  padding: 4rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  max-width: 700px;
+  padding: 50px;
+  padding-left: calc(4rem + 50px);
+  transform: translate(-100px);
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  border-top: 1.5px solid rgba(255, 255, 255, 0.5);
+  border-left: 1.5px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.content h2 {
+  color: var(--blue);
+  font-size: 3em;
+}
+
+.content p {
+  color: var(--blue);
+  font-size: 1.2em;
+}
+
+.content a {
+  display: inline-block;
+  margin-top: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  padding: 15px 30px;
+  background-color: var(--light);
+  color: var(--blue);
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.imgBx img {
+  max-width: 400px;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(50px);
+  }
+
+  50% {
+    transform: translateY(100px);
+  }
+}
+
+.socials {
+  position: absolute;
+  right: -25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials li {
+  list-style: none;
+}
+
+.socials li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 5px 0;
+  border-radius: 50%;
+  background-color: var(--light);
+  color: var(--blue);
+  text-decoration: none;
+  font-size: 24px;
+  transform: scale(0.8);
+  transition: 0.5s;
+}
+
+.socials li:hover a {
+  transform: scale(1) rotate(360deg);
+}
+
+@media (max-width: 1200px) {
+  section {
+    width: calc(100% - 20px);
+  }
+}
+
+@media (max-width: 992px) {
+  section {
+    padding: 50px 10px 10px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
